@@ -58,12 +58,10 @@ export class SearchBar extends React.Component {
 
   handleSearch = e => {
     e.preventDefault();
-    this.props.saveBusinesses(
-      this.props.searchYelp(
-        this.state.term,
-        this.state.location,
-        this.state.sortBy
-      )
+    this.props.searchYelp(
+      this.state.term,
+      this.state.location,
+      this.state.sortBy
     );
   };
 
